@@ -1,0 +1,7 @@
+npm install -g json-server
+npm run json-run
+json-server --watch db.json
+
+ng generate module person --routing
+
+ng g c person/home
