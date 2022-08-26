@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  
+
   users: any;
 
   use = ['a', 'b', 'c'];
@@ -16,7 +16,8 @@ export class TeamComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    let resp = this.http.get('https://jsonplaceholder.typicode.com/users');
+    // let resp = this.http.get('https://jsonplaceholder.typicode.com/users');
+    let resp = this.http.get('http://localhost:3000/person');
     resp.subscribe((data) => this.users = data);
   }
 }
