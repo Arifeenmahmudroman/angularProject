@@ -1,3 +1,4 @@
+
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -22,6 +23,8 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthService } from './auth.service';
 import { Chart1Component } from './chart1/chart1.component';
+import { ReportsComponent } from './dashboard/reports/reports.component';
+
 
 @NgModule({
   declarations: [
@@ -40,14 +43,16 @@ import { Chart1Component } from './chart1/chart1.component';
     NgforComponent,
     LoginComponent,
     DashboardComponent,
-    Chart1Component
+    Chart1Component,
+    ReportsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PersonModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+import { ReportsComponent } from './dashboard/reports/reports.component';
 import { Chart1Component } from './chart1/chart1.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
@@ -36,7 +37,8 @@ const routes: Routes = [
     children: [
       { path: '', component: HomeComponent }
     ]
-  }
+  },
+  {path: 'reports', component: ReportsComponent}
 
 
 
